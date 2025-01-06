@@ -33,7 +33,7 @@ function PlantCard({plantListing, onDeleteListing, handleUpdateItem}) {
       <img src={plantListing.image} alt={plantListing.name} />
       <h4>{plantListing.name}</h4>
       <p>Price: {plantListing.price}</p>
-      <input type="number" name="price" step="0.01" placeholder={plantListing.price} onChange={handleChange} />
+      <input type="number" name="price" step="0.01" placeholder="Update Price" onChange={handleChange} />
       {inStock ? (
         <button onClick={() => setinStock(false)} className="primary">In Stock</button>
       ) : (
