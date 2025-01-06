@@ -16,13 +16,13 @@
       "id": 3,
       "name": "Pilea peperomioides",
       "image": "./images/pilea.jpg",
-      "price": 5.99
+      "price": "0.01"
     },
     {
       "id": 4,
       "name": "Pothos",
       "image": "./images/pothos.jpg",
-      "price": 12.11
+      "price": "0.06"
     },
     {
       "id": 5,
@@ -40,13 +40,7 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
-    },
-    {
-      "image": "https://miro.medium.com/v2/resize:fit:875/0*V3Q3R-YBv42C5VDD",
-      "name": "TOny",
-      "price": "0.02",
-      "id": 8
+      "price": "5.25"
     }
   ]
 }

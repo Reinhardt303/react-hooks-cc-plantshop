@@ -26,11 +26,28 @@ function PlantPage() {
     setSearch(newSearch)
   }
 
+  function handleDeleteListing(id) {
+    const updatedListingsArray = plantListings.filter(listing => listing.id !== id)
+    setPlantListings(updatedListingsArray)
+  }
+
+  function handleUpdateItem(updatedItem) {
+    const updatedItems = plantListings.map((plantListing) => {
+      if (plantListing.id === updatedItem.id) {
+        return updatedItem;
+      }
+      else {
+        return plantListing;
+      }
+    })
+    setPlantListings(updatedItems)
+  }
+
   return (
     <main>
       <NewPlantForm onAddListing={handleAddListing} />
       <Search onSearch={handleSearch} />
-      <PlantList search={search} filteredListings={filteredListings} />
+      <PlantList onDeleteListing={handleDeleteListing} search={search} filteredListings={filteredListings} handleUpdateItem={handleUpdateItem} />
     </main>
   );
 }
